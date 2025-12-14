@@ -27,7 +27,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
     return (
         <main className="min-h-screen bg-black text-foreground">
             {/* Hero Section */}
-            <div className="relative w-full h-[40vh] bg-zinc-900 flex items-end pb-12 px-4 md:px-12 border-b border-zinc-800">
+            <div className="relative w-full h-[30vh] bg-zinc-900 flex items-end pb-12 px-4 md:px-12 border-b border-zinc-800">
                 {/* Back Button */}
                 <div className="absolute top-8 left-8 z-10">
                     <Link href="/#works" className="flex items-center gap-2 px-4 py-2 bg-black/50 backdrop-blur-md rounded-full text-white hover:bg-black/70 transition-colors">
