@@ -55,26 +55,31 @@ export default function Contact() {
                 </p>
 
                 <div className="relative mt-12 flex w-full flex-col overflow-hidden rounded-2xl bg-zinc-900 p-8 sm:p-12">
-                    <h3 className="text-2xl font-bold sm:text-3xl break-all">{email}</h3>
-                    <div className="mt-8 flex gap-4">
-                        <button
-                            onClick={copyToClipboard}
-                            className="rounded-full border border-zinc-700 bg-zinc-800 px-6 py-2 text-sm transition-colors hover:bg-zinc-700"
-                        >
-                            Copy Email
-                        </button>
-                        <a
-                            href={`mailto:${email}`}
-                            className="rounded-full px-6 py-2 text-sm font-semibold text-white transition-opacity hover:opacity-90"
-                            style={{ backgroundColor: 'var(--primary)' }}
-                        >
-                            Send Mail
-                        </a>
-                    </div>
-                    <div className="absolute top-8 right-8 flex flex-col sm:flex-row gap-4">
-                        <a href="https://www.linkedin.com/in/srinidhi-gs-47a348200/" className="rounded-full border border-zinc-700 px-4 py-2 text-sm hover:bg-zinc-800 text-center">LinkedIn</a>
-                        <a href="https://www.behance.net/srinidhig/" className="rounded-full border border-zinc-700 px-4 py-2 text-sm hover:bg-zinc-800 text-center">Behance</a>
-                        <a href="/assets/Srinidhi_Resume.pdf" download="Srinidhi_Resume.pdf" className="rounded-full border border-zinc-700 px-4 py-2 text-sm hover:bg-zinc-800 text-center">Resume</a>
+                    <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-8">
+                        <div>
+                            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold break-all md:break-normal">{email}</h3>
+                            <div className="mt-8 flex flex-wrap gap-4">
+                                <button
+                                    onClick={copyToClipboard}
+                                    className="rounded-full border border-zinc-700 bg-zinc-800 px-4 py-2 text-xs md:px-6 md:py-3 md:text-sm transition-colors hover:bg-zinc-700"
+                                >
+                                    Copy Email
+                                </button>
+                                <a
+                                    href={`mailto:${email}`}
+                                    className="rounded-full px-4 py-2 text-xs font-semibold text-white md:px-6 md:py-3 md:text-sm transition-opacity hover:opacity-90"
+                                    style={{ backgroundColor: 'var(--primary)' }}
+                                >
+                                    Send Mail
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-wrap gap-3">
+                            <a href="https://www.linkedin.com/in/srinidhi-gs-47a348200/" className="rounded-full border border-zinc-700 px-3 py-1.5 text-xs md:px-4 md:py-2 md:text-sm hover:bg-zinc-800 text-center">LinkedIn</a>
+                            <a href="https://www.behance.net/srinidhig/" className="rounded-full border border-zinc-700 px-3 py-1.5 text-xs md:px-4 md:py-2 md:text-sm hover:bg-zinc-800 text-center">Behance</a>
+                            <a href="/assets/Srinidhi_Resume.pdf" download="Srinidhi_Resume.pdf" className="rounded-full border border-zinc-700 px-3 py-1.5 text-xs md:px-4 md:py-2 md:text-sm hover:bg-zinc-800 text-center">Resume</a>
+                        </div>
                     </div>
                 </div>
             </div>
