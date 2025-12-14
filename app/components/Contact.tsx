@@ -3,7 +3,7 @@ import React from "react";
 import { Copy } from "lucide-react";
 
 export default function Contact() {
-    const email = "1234kukreja@gmail.com";
+    const email = "gssrinidhi2002@gmail.com";
 
     const copyToClipboard = () => {
         if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -72,8 +72,8 @@ export default function Contact() {
                         </a>
                     </div>
                     <div className="absolute top-8 right-8 flex flex-col sm:flex-row gap-4">
-                        <a href="https://www.linkedin.com/in/angad-kukreja-1018bba8/" className="rounded-full border border-zinc-700 px-4 py-2 text-sm hover:bg-zinc-800 text-center">LinkedIn</a>
-                        <a href="#" className="rounded-full border border-zinc-700 px-4 py-2 text-sm hover:bg-zinc-800 text-center">Behance</a>
+                        <a href="https://www.linkedin.com/in/srinidhi-gs-47a348200/" className="rounded-full border border-zinc-700 px-4 py-2 text-sm hover:bg-zinc-800 text-center">LinkedIn</a>
+                        <a href="https://www.behance.net/srinidhig/" className="rounded-full border border-zinc-700 px-4 py-2 text-sm hover:bg-zinc-800 text-center">Behance</a>
                         <a href="/assets/Srinidhi_Resume.pdf" download="Srinidhi_Resume.pdf" className="rounded-full border border-zinc-700 px-4 py-2 text-sm hover:bg-zinc-800 text-center">Resume</a>
                     </div>
                 </div>

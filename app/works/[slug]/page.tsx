@@ -27,7 +27,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
     return (
         <main className="min-h-screen bg-black text-foreground">
             {/* Hero Section */}
-            <div className="relative w-full h-[30vh] bg-zinc-900 flex items-end pb-12 px-4 md:px-12 border-b border-zinc-800">
+            <div className="relative w-full min-h-[40vh] bg-zinc-900 flex items-end pb-12 px-4 md:px-12 border-b border-zinc-800 pt-32">
                 {/* Back Button */}
                 <div className="absolute top-8 left-8 z-10">
                     <Link href="/#works" className="flex items-center gap-2 px-4 py-2 bg-black/50 backdrop-blur-md rounded-full text-white hover:bg-black/70 transition-colors">
@@ -36,11 +36,11 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                     </Link>
                 </div>
 
-                <div className="max-w-5xl w-full mx-auto relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
+                <div className={`max-w-5xl w-full mx-auto relative z-10 grid grid-cols-1 ${project.role || project.tech ? 'md:grid-cols-2' : ''} gap-8 items-end`}>
                     <div>
                         <span className="text-zinc-400 text-sm font-bold tracking-widest uppercase mb-4 block">{project.subtitle}</span>
                         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">{project.title}</h1>
-                        <p className="text-zinc-300 text-lg leading-relaxed max-w-lg mb-6">{project.description}</p>
+                        <p className="text-zinc-300 text-lg leading-relaxed mb-6">{project.description}</p>
 
                         {/* Tags */}
                         <div className="flex flex-wrap gap-2">
@@ -51,20 +51,22 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                     </div>
 
                     {/* Metadata */}
-                    <div className="grid grid-cols-2 gap-6 bg-black/30 p-6 rounded-2xl backdrop-blur-sm border border-white/10">
-                        {project.role && (
-                            <div>
-                                <h4 className="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-1">Role</h4>
-                                <p className="text-white font-medium">{project.role}</p>
-                            </div>
-                        )}
-                        {project.tech && (
-                            <div>
-                                <h4 className="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-1">Tech Stack</h4>
-                                <p className="text-white font-medium">{project.tech.join(", ")}</p>
-                            </div>
-                        )}
-                    </div>
+                    {(project.role || project.tech) && (
+                        <div className="grid grid-cols-2 gap-6 bg-black/30 p-6 rounded-2xl backdrop-blur-sm border border-white/10">
+                            {project.role && (
+                                <div>
+                                    <h4 className="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-1">Role</h4>
+                                    <p className="text-white font-medium">{project.role}</p>
+                                </div>
+                            )}
+                            {project.tech && (
+                                <div>
+                                    <h4 className="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-1">Tech Stack</h4>
+                                    <p className="text-white font-medium">{project.tech.join(", ")}</p>
+                                </div>
+                            )}
+                        </div>
+                    )}
                 </div>
 
                 {/* Background Image / Glow */}
@@ -75,7 +77,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             </div>
 
             {/* Content Section */}
-            <div className="max-w-4xl mx-auto px-4 py-16">
+            <div className="max-w-5xl mx-auto px-4 py-16">
                 <div className="space-y-4">
                     {project.content.map((block, idx) => (
                         <BlockRenderer key={idx} block={block} />

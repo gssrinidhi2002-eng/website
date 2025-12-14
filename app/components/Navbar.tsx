@@ -34,8 +34,8 @@ export default function Navbar() {
                     transition={{ duration: 0.3 }}
                     className="fixed top-6 z-50 flex items-center gap-4 rounded-full bg-zinc-900/80 px-6 py-3 backdrop-blur-md border border-zinc-800 shadow-xl"
                 >
-                    <a href="#" className="flex h-8 w-8 items-center justify-center rounded-full bg-zinc-700 text-xs font-bold text-zinc-300 transition-transform hover:scale-110 hover:text-white">
-                        TA
+                    <a href="#" className="flex h-8 w-8 items-center justify-center rounded-full overflow-hidden bg-zinc-700 transition-transform hover:scale-110">
+                        <img src="/assets/Profile.png" alt="Profile" className="w-full h-full object-cover" />
                     </a>
                     <nav className="flex gap-6">
                         {navItems.map((item) => (

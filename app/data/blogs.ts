@@ -13,13 +13,13 @@ export interface Blog {
 
 export const blogs: Blog[] = [
     {
-        id: "modular-multiplayer-sdk",
+        id: "blog1",
         title: "Modular Multiplayer SDK",
         category: "ARCHITECTURE",
-        image: "/assets/Horizon/HorizonStart.jpeg",
+        image: "/assets/Blog1/1.png",
         description: "The Coupling Trap: What happens when you need to switch from Mirror to Photon?",
         date: "Dec 14, 2025",
-        link: "/blogs/modular-multiplayer-sdk",
+        link: "/blogs/blog1",
         blocks: [
             {
                 type: 'group',
@@ -95,13 +95,13 @@ export const blogs: Blog[] = [
         ]
     },
     {
-        id: "runtime-visual-scripting",
+        id: "blog2",
         title: "Runtime Visual Scripting",
         category: "TOOLING",
-        image: "/assets/LanDash/LanDashHero.jpg",
+        image: "/assets/Blog2/2.png",
         description: "Empowering designers with node-based logic at runtime.",
         date: "Dec 10, 2025",
-        link: "/blogs/runtime-visual-scripting",
+        link: "/blogs/blog2",
         blocks: [
             {
                 type: 'group',
@@ -149,13 +149,13 @@ export const blogs: Blog[] = [
         ]
     },
     {
-        id: "runtime-hot-reloading",
+        id: "blog3",
         title: "Runtime Hot-Reloading",
         category: "ARCHITECTURE",
-        image: "/assets/Cricket/CricketStart.jpeg",
+        image: "/assets/Blog3/3.png",
         description: "Iterate faster with instant code updates.",
         date: "Dec 05, 2025",
-        link: "/blogs/runtime-hot-reloading",
+        link: "/blogs/blog3",
         blocks: [
             {
                 type: 'group',
@@ -215,13 +215,13 @@ export const blogs: Blog[] = [
         ]
     },
     {
-        id: "custom-render-pipelines",
+        id: "blog4",
         title: "Custom Render Pipelines",
         category: "GRAPHICS",
-        image: "/assets/Moto/MotoStart.jpg",
+        image: "/assets/Blog4/4.png",
         description: "Deep dive into scriptable render pipelines.",
         date: "Nov 28, 2025",
-        link: "/blogs/custom-render-pipelines",
+        link: "/blogs/blog4",
         blocks: [
             {
                 type: 'group',
@@ -254,13 +254,13 @@ export const blogs: Blog[] = [
         ]
     },
     {
-        id: "physically-based-rendering",
+        id: "blog5",
         title: "Physically Based Rendering",
         category: "GRAPHICS",
-        image: "/assets/Moto/MotoStart.jpg",
+        image: "/assets/Blog5/5.png",
         description: "Understanding light transport and material properties.",
         date: "Nov 15, 2025",
-        link: "/blogs/physically-based-rendering",
+        link: "/blogs/blog5",
         blocks: [
             {
                 type: 'group',
