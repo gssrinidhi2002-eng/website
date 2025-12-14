@@ -20,7 +20,6 @@ export interface Project {
     role?: string;
     tech?: string[];
     content: ContentBlock[];
-    orientation?: 'landscape' | 'portrait';
 }
 
 export const projects: Project[] = [
@@ -34,7 +33,6 @@ export const projects: Project[] = [
         description: "Unleash your speed demon and race your way to glory!",
         role: "Co-Developer",
         tech: ["Unity", "C#", "Netcode"],
-        orientation: "landscape",
         content: [
             {
                 type: 'text',
@@ -67,7 +65,6 @@ export const projects: Project[] = [
         description: "Time for Extreme Dirt-Bike Racing!",
         role: "Co-Developer",
         tech: ["Unity", "C#", "Netcode"],
-        orientation: "landscape",
         content: [
             {
                 type: 'text',
@@ -107,7 +104,6 @@ export const projects: Project[] = [
         description: "Competitive real-time multiplayer cricket showdown!",
         role: "Co-Developer",
         tech: ["Unity", "C#", "Netcode", "Relay"],
-        orientation: "portrait",
         content: [
             {
                 type: 'video',
@@ -141,7 +137,6 @@ export const projects: Project[] = [
         description: "A short but hard game about dodging colourful pillars at high speed. Juggle your speed, size and direction to reach the finish line.",
         role: "Designer & Developer",
         tech: ["Unity 2D", "C#"],
-        orientation: "landscape",
         content: [
             {
                 type: 'video',
@@ -184,7 +179,6 @@ export const projects: Project[] = [
         description: "Shoot the asteroids and aim for the highest score.",
         role: "Designer & Developer",
         tech: ["Unity", "C#", "Photon Networking"],
-        orientation: "portrait",
         content: [
             {
                 type: 'text',
@@ -217,7 +211,6 @@ export const projects: Project[] = [
         description: "A text - based adventure game about your journey through a mysterious citadel.",
         role: "Designer & Developer",
         tech: ["C++"],
-        orientation: "landscape",
         content: [
             {
                 type: 'text',
@@ -243,7 +236,6 @@ export const projects: Project[] = [
         description: "Made in a 48-Hour Game Jam. Use your Telekinetic powers to alter your environment and escape the facility.",
         role: "Co - Designer & Developer",
         tech: ["C#", "Unity"],
-        orientation: "landscape",
         content: [
             {
                 type: 'text',
@@ -276,7 +268,6 @@ export const projects: Project[] = [
         description: "A VR Shooter where you must shoot the asteroids to save the planet.",
         role: "Co - Designer & Developer",
         tech: ["C#", "Unity", "OpenXR"],
-        orientation: "landscape",
         content: [
             {
                 type: 'text',
