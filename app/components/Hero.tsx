@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
     return (
-        <section className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-background px-4 py-20">
+        <section className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-background px-4 pt-30 pb-20">
             {/* Background Glows */}
             {/* Background Glows */}
             <div className="absolute top-0 left-0 h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[120px]" style={{ backgroundColor: 'var(--primary)', opacity: 0.2 }} />

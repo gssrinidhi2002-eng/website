@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tsuite Angad  | Portfolio",
-  description: "Game Developer Portfolio - Unity, C#",
+  title: "Srinidhigs | Portfolio",
+  description: "Associate Product Manager | AI, HCI, Consumer Products",
   icons: {
     icon: '/TA.ico',
   }
