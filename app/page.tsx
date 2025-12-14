@@ -10,8 +10,8 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center bg-background text-foreground overflow-hidden">
       <Navbar />
       <Hero />
-      <Works />
       <Blogs />
+      <Works />
       <Contact />
       <Footer />
     </main>

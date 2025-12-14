@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
-    { name: "WORKS", href: "#works" },
     { name: "BLOGS", href: "#blogs" },
+    { name: "WORKS", href: "#works" },
     { name: "CONTACT", href: "#contact" },
 ];
 
