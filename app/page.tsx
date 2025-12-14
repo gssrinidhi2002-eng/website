@@ -1,6 +1,5 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import About from "./components/About";
 import Works from "./components/Works";
 import Blogs from "./components/Blogs";
 import Contact from "./components/Contact";
@@ -11,7 +10,6 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center bg-background text-foreground overflow-hidden">
       <Navbar />
       <Hero />
-      <About />
       <Works />
       <Blogs />
       <Contact />
