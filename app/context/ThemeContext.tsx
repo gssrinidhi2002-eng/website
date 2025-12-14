@@ -41,7 +41,7 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-    const [theme, setTheme] = useState<Theme>("nature");
+    const [theme, setTheme] = useState<Theme>("cyberpunk");
 
     // Load theme from local storage
     useEffect(() => {
