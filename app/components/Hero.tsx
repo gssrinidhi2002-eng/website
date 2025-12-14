@@ -10,7 +10,7 @@ export default function Hero() {
             <div className="absolute top-0 left-0 h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[120px]" style={{ backgroundColor: 'var(--primary)', opacity: 0.2 }} />
             <div className="absolute bottom-0 right-0 h-[800px] w-[800px] translate-x-1/2 translate-y-1/2 rounded-full blur-[120px]" style={{ backgroundColor: 'var(--secondary)', opacity: 0.2 }} />
 
-            <div className="z-10 flex flex-col items-center text-center max-w-4xl mx-auto space-y-8">
+            <div className="z-10 flex flex-col items-center text-center max-w-8xl mx-auto space-y-8">
                 {/* Profile Image */}
                 <motion.div
                     initial={{ opacity: 0, scale: 0.5 }}
@@ -45,10 +45,13 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
+                    className="w-full max-w-6xl px-4"
                 >
-                    <h2 className="text-4xl md:text-6xl font-bold text-white leading-tight">
-                        Converting User Insight Into Product Momentum
-                    </h2>
+                    <img
+                        src="/assets/hero_text.png"
+                        alt="Building the bridge between intention and interaction"
+                        className="w-full h-auto object-contain"
+                    />
                 </motion.div>
 
                 {/* Description */}
@@ -56,10 +59,10 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
-                    className="max-w-2xl text-zinc-400 leading-relaxed text-sm md:text-base"
+                    className="max-w-3xl text-zinc-400 leading-relaxed text-base md:text-lg"
                 >
                     <p>
-                        work at the <strong className="text-zinc-200">intersection of UX</strong>, product strategy, and execution—owning <strong className="text-zinc-200">zero-to-one</strong> features, stabilising <strong className="text-zinc-200">fast-changing systems</strong>, and shipping decisions when requirements, metrics, and <strong className="text-zinc-200">direction</strong> are still evolving.
+                        Working at the <strong className="text-zinc-200">intersection of UX</strong>, product strategy, and execution—owning <strong className="text-zinc-200">zero-to-one</strong> features, stabilising <strong className="text-zinc-200">fast-changing systems</strong>, and shipping decisions when requirements, metrics, and <strong className="text-zinc-200">direction</strong> are still evolving.
                     </p>
                 </motion.div>
 
@@ -74,7 +77,7 @@ export default function Hero() {
                         href="#contact"
                         className="inline-flex items-center justify-center px-8 py-3 bg-white text-black rounded-full font-bold text-sm tracking-wide hover:bg-zinc-200 transition-colors"
                     >
-                        CONNECT WITH ME
+                        CONNECT
                     </a>
                 </motion.div>
             </div>
