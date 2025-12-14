@@ -54,9 +54,9 @@ export default function Works() {
     return (
         <section id="works" className="w-full bg-background py-24 px-4 text-foreground">
             <div className="mx-auto max-w-5xl text-center mb-16 space-y-4">
-                <h2 className="text-3xl font-bold md:text-5xl">&quot;I build worlds that leave a memorable mark.&quot;</h2>
+                <h2 className="text-3xl font-bold md:text-5xl">&quot;Exploring uncertainty helps define what should be built next.&quot;</h2>
                 <p className="mx-auto max-w-2xl text-zinc-400">
-                    I turn ideas into responsive, polished, and performant gameplay.
+                    Questions assumptions early, simplifying systems, and designs for change rather than certainty.
                 </p>
             </div>
 
