@@ -1,47 +1,14 @@
 import React from "react";
-import { blogContent, ContentBlock } from "../../data/blog-content";
+import { blogs } from "../../data/blogs";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-// Recursive Block Renderer Component
-const BlockRenderer = ({ block }: { block: ContentBlock }) => {
-    switch (block.type) {
-        case 'heading':
-            return <h3 className={block.className || "text-2xl font-bold text-white mb-4"}>{block.content}</h3>;
-
-        case 'text':
-            return <p className={block.className || "text-zinc-400 mb-4 leading-relaxed"}>{block.content}</p>;
-
-        case 'image':
-            return (
-                <div className={`overflow-hidden ${block.className || "rounded-xl my-6"}`}>
-                    <img
-                        src={block.src}
-                        alt={block.alt || "Blog Image"}
-                        className="w-full h-full object-cover"
-                    />
-                </div>
-            );
-
-        case 'group':
-            return (
-                <div className={block.className || "my-8"}>
-                    {block.title && <h4 className="text-xl font-bold text-white mb-4">{block.title}</h4>}
-                    {block.children?.map((child, idx) => (
-                        <BlockRenderer key={idx} block={child} />
-                    ))}
-                </div>
-            );
-
-        default:
-            return null;
-    }
-};
+import { BlockRenderer } from "../../components/BlockRenderer";
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
 
-    const post = blogContent.find(p => p.id === slug);
+    const post = blogs.find(p => p.id === slug);
 
     if (!post) {
         return (
@@ -92,7 +59,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     );
 }
 export async function generateStaticParams() {
-    return blogContent.map((post) => ({
+    return blogs.map((post) => ({
         slug: post.id,
     }));
 }
