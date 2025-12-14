@@ -91,15 +91,15 @@ export default function Blogs() {
                                 alt={blog.title}
                                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                            <div className="absolute top-4 left-4">
+                            <div className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
                                 <span className="text-[10px] font-bold tracking-widest text-zinc-400 uppercase">
                                     {blog.category}
                                 </span>
                             </div>
 
-                            <div className="absolute bottom-4 left-4 right-4">
+                            <div className="absolute bottom-4 left-4 right-4 translate-y-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                                 <h3 className="text-lg font-bold text-white mb-1 leading-tight">
                                     {blog.title}
                                 </h3>

@@ -1,4 +1,4 @@
-export type BlockType = 'text' | 'image' | 'group' | 'heading' | 'video';
+export type BlockType = 'text' | 'image' | 'group' | 'heading' | 'video' | 'markdown';
 
 export interface ContentBlock {
     type: BlockType;

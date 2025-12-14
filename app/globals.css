@@ -1,12 +1,16 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 :root {
   --background: #050505;
   --foreground: #ededed;
   /* Default Theme (Cyberpunk) */
-  --primary: #8b5cf6; /* purple-500 */
-  --secondary: #3b82f6; /* blue-500 */
-  --accent: #d946ef; /* fuchsia-500 */
+  --primary: #8b5cf6;
+  /* purple-500 */
+  --secondary: #3b82f6;
+  /* blue-500 */
+  --accent: #d946ef;
+  /* fuchsia-500 */
 }
 
 @theme inline {

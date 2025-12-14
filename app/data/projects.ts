@@ -46,11 +46,11 @@ export const projects: Project[] = [
     },
     {
         slug: "cosmos",
-        title: "Cosmos",
-        subtitle: "Can You Make it to The Top?",
+        title: "COSMOS",
+        subtitle: "Your Gateway to Galactic Living",
         heroImage: "/assets/Cosmos/Thumbnail.png",
-        tags: ["Text Based", "Adventure", "Mystery"],
-        description: "A text - based adventure game about your journey through a mysterious citadel.",
+        tags: ["Human–AI Interaction", "Systems Visualization", "Exploratory Interfaces", "Speculative Product"],
+        description: "COSMOS is an immersive speculative experience that invites users to explore futuristic megastructures and imagine humanity’s potential centuries into the future. Inspired by science fiction and scientific imagination, the project blends interaction, narrative, and exploration to let users experience bold ideas of collective creativity and futuristic living—on their own terms.",
         content: [
             {
                 type: 'image',

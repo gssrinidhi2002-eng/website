@@ -1,4 +1,5 @@
 import React from "react";
+import ReactMarkdown from "react-markdown";
 import { ContentBlock } from "../types/content";
 
 // Recursive Block Renderer Component
@@ -43,6 +44,30 @@ export const BlockRenderer = ({ block }: { block: ContentBlock }) => {
                     {block.children?.map((child, idx) => (
                         <BlockRenderer key={idx} block={child} />
                     ))}
+                </div>
+            );
+
+        case 'markdown':
+            return (
+                <div className={`${block.className || "mb-8"}`}>
+                    {/* @ts-ignore */}
+                    <ReactMarkdown
+                        components={{
+                            h1: ({ node, ...props }) => <h1 className="text-3xl md:text-4xl font-bold text-white mt-8 mb-4" {...props} />,
+                            h2: ({ node, ...props }) => <h2 className="text-2xl md:text-3xl font-bold text-white mt-8 mb-4" {...props} />,
+                            h3: ({ node, ...props }) => <h3 className="text-xl md:text-2xl font-bold text-white mt-6 mb-3" {...props} />,
+                            p: ({ node, ...props }) => <p className="text-zinc-400 mb-4 leading-relaxed whitespace-pre-line" {...props} />,
+                            ul: ({ node, ...props }) => <ul className="list-disc list-inside text-zinc-400 mb-4 space-y-2 pl-4" {...props} />,
+                            ol: ({ node, ...props }) => <ol className="list-decimal list-inside text-zinc-400 mb-4 space-y-2 pl-4" {...props} />,
+                            li: ({ node, ...props }) => <li className="text-zinc-400 leading-relaxed" {...props} />,
+                            blockquote: ({ node, ...props }) => <blockquote className="border-l-4 border-zinc-700 pl-4 py-1 my-6 text-zinc-300 italic bg-zinc-900/50 rounded-r-lg" {...props} />,
+                            hr: ({ node, ...props }) => <hr className="my-8 border-zinc-800" {...props} />,
+                            strong: ({ node, ...props }) => <strong className="text-white font-bold" {...props} />,
+                            a: ({ node, ...props }) => <a className="text-blue-400 hover:text-blue-300 underline underline-offset-4" {...props} />,
+                        }}
+                    >
+                        {block.content}
+                    </ReactMarkdown>
                 </div>
             );
 
