@@ -94,7 +94,7 @@ export default function Blogs() {
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                             <div className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
-                                <span className="text-[10px] font-bold tracking-widest text-zinc-400 uppercase">
+                                <span className="text-[10px] font-bold tracking-widest text-zinc-300 uppercase bg-black/50 backdrop-blur-md px-3 py-1 rounded-full border border-white/10 shadow-lg">
                                     {blog.category}
                                 </span>
                             </div>
