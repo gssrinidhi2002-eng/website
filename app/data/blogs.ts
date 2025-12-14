@@ -15,7 +15,7 @@ export const blogs: Blog[] = [
     {
         id: "blog1",
         title: "What We Shipped Because We Ran Out of Time",
-        category: "ARCHITECTURE",
+        category: "PRODUCT",
         image: "/assets/Blog1/1.png",
         description: "When time ran out, we shipped clarity over ambition—cutting complexity, unstable ideas, and polish to protect what users could immediately understand.",
         date: "Oct 3, 2025",
@@ -116,7 +116,7 @@ Because that answer—more than any pitch deck or roadmap—defines what the pro
     {
         id: "blog2",
         title: "Learning to Say No as the Youngest in the Room",
-        category: "TOOLING",
+        category: "EXPERIENCE",
         image: "/assets/Blog2/2.png",
         description: "In fast teams, saying no at the right time helps prevent unfocused work, hidden trade-offs, and fragile product decisions.",
         date: "Mar 09, 2025",
@@ -325,7 +325,7 @@ Learning when to say no—especially when you’re the youngest in the room—is
     {
         id: "blog3",
         title: "Building for Retention Before Product–Market Fit Is a Trap",
-        category: "ARCHITECTURE",
+        category: "PRODUCT",
         image: "/assets/Blog3/3.png",
         description: "Optimizing retention before product–market fit creates false confidence; early retention reflects curiosity or confusion, not value, delaying real learning and alignment.",
         date: "Feb 19, 2025",
@@ -485,7 +485,7 @@ It comes from making them want to come back—
     {
         id: "blog4",
         title: "We Kept Fixing Features. Users Kept Leaving.",
-        category: "GRAPHICS",
+        category: "MANAGEMENT",
         image: "/assets/Blog4/4.png",
         description: "We fixed features, but users left—because uncertainty, not usability, drives churn. Most product failures are emotional before they’re technical.",
         date: "Nov 28, 2025",
@@ -695,7 +695,7 @@ And once you start observing products through that lens, it’s hard to unsee.
     {
         id: "blog5",
         title: "What Game Genres Taught Me About UX and AI",
-        category: "GRAPHICS",
+        category: "UX",
         image: "/assets/Blog5/5.png",
         description: "Why different game genres expose the real limits—and responsibilities—of AI-driven user experience.",
         date: "Dec 06, 2025",
