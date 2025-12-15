@@ -70,7 +70,7 @@ export default function Blogs() {
         <section id="blogs" className="w-full bg-background py-24 px-4 text-foreground overflow-hidden">
             <div className="mx-auto max-w-7xl mb-12">
                 <div className="space-y-4 text-center">
-                    <h2 className="text-4xl font-bold md:text-6xl">What can I build</h2>
+                    <h2 className="text-4xl font-bold md:text-6xl">A Few Thoughts</h2>
                 </div>
             </div>
 
